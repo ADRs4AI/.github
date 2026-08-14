@@ -53,14 +53,15 @@ discussions to artifacts immediately.**
 
 Two refinements carry most of the weight:
 
-**Every question ships with ORJ — Options, Recommendation, Justification.**
+**Every question ships with ORJC — Options, Recommendation, Justification, Confidence.**
 An AI that asks a question must lay out the option space (the diversity
 that resists anchoring), state its attributed lean, and justify it from
 evidence — because the justification is what teaches the human *how the
-decision was made*. That turns delegation into delegation-with-a-handle:
+decision was made* — and state its confidence, the falsifier that tells
+you which answers deserve a second look. That turns delegation into delegation-with-a-handle:
 you can reclaim any decision you handed off, because the reasoning came
 with it. The binding constraint in months of measured practice was never
-artifact production — it was **finite human decision attention**, and ORJ
+artifact production — it was **finite human decision attention**, and ORJCC
 is how you protect it: a well-posed question degrades gracefully to
 *accept or override*.
 
@@ -151,9 +152,12 @@ process, and the record — public in the artifacts — shows it held:
 - **The VS Code extension** — tree views of ADRs and open questions,
   diagnostics that catch malformed questions *at author time* (with
   fix-its), deep links, and an MCP server so agents can query the record.
+- **The iOS client** — the record in your pocket: dossiers of open
+  questions, recommendations you can *Accept or Override* from wherever
+  you are — a sibling of the extension on the client side of the split.
 - **The practices** — small, named, portable: the Prime Directive; the
-  ORJ protocol; the Shipwright clause (*every completion names
-  what it did NOT verify*); seats-inherited-never-claimed; the encoding map
+  ORJC protocol; the Shipwright clause (*every completion names
+  what it did NOT verify*); seats-belong-to-models; the encoding map
   (every kind of knowledge has exactly one durable home).
 
 ## The idea underneath
@@ -172,7 +176,7 @@ The second: **an answer transfers a state, but a
 question transfers a generator.** This system is built to move generators —
 between human and AI, between AI and AI, between the present and whoever
 arrives next. That is why questions are first-class objects with handles
-and ORJ; why doubts are treated as generative rather than
+and ORJC; why doubts are treated as generative rather than
 noise; why the record keeps *reasoning*, not just conclusions.
 
 And its engineering corollary, learned twice and engraved: **implicit
