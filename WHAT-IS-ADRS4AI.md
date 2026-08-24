@@ -18,6 +18,10 @@ model-agnostic methodology, toolset, and culture for making that thinking
 instances, and the tools between them. It does not make an AI persistent,
 and it does not make anyone remember. **It makes the work resumable — and the thinking compound.**
 
+Imperative programming tells the machine *how*; declarative programming,
+*what*. **Deliberative programming** keeps the *why* — and ADRs4AI is its
+first full toolkit.
+
 It was built the honest way: By a professor with Severely Deficient
 Autobiographical Memory—which is not an absence of memory but a
 *different* one: Semantic, deliberate, salience-driven; he does not
@@ -151,6 +155,11 @@ process, and the record—public in the artifacts—shows it held:
   corpus that now regression-tests the tooling, measures the collaboration
   (answer latency, recommendation-adoption rates), and supplies real
   exemplars to the teaching materials.
+- **The record audits its own instruments.** Our question-counter once
+  reported 61 open questions where 12 were real — the grammar lived in
+  habit, the models drifted, the tools went quietly blind. The fix (an
+  anchored parse) shipped the day the drift was caught, and the counter's
+  failure is itself preserved as a specimen.
 
 ## What you actually get
 
@@ -196,10 +205,20 @@ arrives next. That is why questions are first-class objects with handles
 and ORRCF; why doubts are treated as generative rather than
 noise; why the record keeps *reasoning*, not just conclusions.
 
-And its engineering corollary, learned twice and engraved: **Implicit
-grammar + generative models = silent invisibility.** Either parse
-liberally, or lint loudly, or state the grammar where the models read —
-per field, pick at least one. We pick all three.
+And an engineering corollary, in defense of something specific: **The
+format stays loose on purpose.** These records are plain Markdown — not
+XML, not a schema — because the substrate has to leave room for *métis*,
+the local, practical knowledge that James C. Scott's *Seeing Like a
+State* warns over-legible systems destroy. Our grammar was never
+prescribed; it grew from the organic needs of its most engaged users (the
+Postel story above). But looseness has a quiet failure mode: When rules
+live only in habit, generative models drift from them, and parsers don't
+error on the drift — they just stop seeing the drifted files. So instead
+of prescribing, we instrument: Parse liberally, lint loudly, state the
+grammar where the models read — per field, at least one; we pick all
+three — and the format evolves as one living thing, monitored and healed
+across every adopted copy (kintsugi, our template-repair tool: Git at the
+level of individual lines).
 
 Because the traces preserve the assumptions and alternatives that generated
 each decision, the substrate is also a **falsifiability machine**: Future
@@ -228,4 +247,9 @@ applied 2026-07-30, same seat — composition unchanged per Sol's own
 verdict: "those are release checks, not reasons to disturb the founding
 text"; round-one founder pass (Pharoscan 0004, eleven sections ruled,
 edits applied on the founder's word — ORRCF, the heritage sentence, crews'
-purpose paragraph in his voice, house typography) 2026-08-21, Pharos 5*
+purpose paragraph in his voice, house typography) 2026-08-21, Pharos 5;
+naming pass (Pharoscan 0005b — the term-map staircase ratified, the
+deliberative-programming hinge landed at the founder's "this is the
+strongest one," the corollary rebuilt around the métis motivation per his
+own note, the 61-vs-12 specimen seated in the receipts) 2026-08-24, same
+seat, with Fable 5 (claude.ai)'s attributed ballot beside the founder's*
