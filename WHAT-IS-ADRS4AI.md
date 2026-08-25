@@ -1,5 +1,22 @@
 # What is ADRs4AI?
 
+## Two ways to relate to AI
+
+There are two ways to put an AI to work, and neither is wrong — but you
+should know, at any given moment, which one you are in. Call the first the
+**cybernetic** use, from *kybernētēs*, the steersman: The model as governor
+in a feedback loop — you state an outcome, it steers toward it, you
+correct, it converges. What matters is the output; the reasoning in
+between is exhaust. Call the second the **epistemic** use, from
+*epistēmē*, knowledge — how we come to know what we know, and why we trust
+it: The model as a partner in understanding. What matters is the reasoning
+you build together, because the reasoning is what you will need again.
+
+Most AI tooling today serves the cybernetic use, and serves it well. This
+project is built for the other one: AI already excels at *doing*, so your
+scarce attention can finally concentrate on *thinking* — and the thinking,
+once written down, stops being scarce.
+
 ## The problem: Thinking evaporates
 
 The most valuable thing that happens between a human and an AI is not the
@@ -26,7 +43,7 @@ It was built the honest way: By a professor with Severely Deficient
 Autobiographical Memory—which is not an absence of memory but a
 *different* one: Semantic, deliberate, salience-driven; he does not
 experience a moment and remember it afterward, he decides in the moment
-what deserves encoding, and folds the rest into invariants he can trust—
+what deserves encoding, and folds the rest into invariants he can trust —
 collaborating daily with AI models that retain nothing between sessions.
 Neither side of the workflow could rely on episodic continuity, so nothing
 was allowed to depend on it. And once memory ceased to be an implicit
@@ -175,7 +192,8 @@ process, and the record—public in the artifacts—shows it held:
 - **The iOS client** — the record in your pocket: Dossiers of open
   questions, recommendations you can *Accept or Override* from wherever
   you are — a sibling of the extension on the client side of the split.
-- **The ADR format itself** — a small, versioned document grammar with
+- **The Architectural Deliberation Record (ADR) format itself** — a
+  small, versioned document grammar with
   **deep links**: Any question or decision has a stable address
   (`adr:0021#qst-scope`) that briefs, commits, dashboards, and phones can
   all cite — because a record you cannot point into from anywhere is a
@@ -236,6 +254,31 @@ questions in your editor). Then write your first seed, let your AI chunk
 it into ADRs, and answer your first recommended question. The rest is
 practice.*
 
+## Bibliography
+
+Sources this practice actually draws on — worth reading whole:
+
+- Paulo Freire, *Pedagogy of the Oppressed* — problem-posing transmission
+  over the banking model; the pedagogy underneath the practice.
+- James C. Scott, *Seeing Like a State* — why over-legible systems destroy
+  the local knowledge (*métis*) they meant to capture; the reason our
+  format stays loose.
+- T. M. Scanlon, *What We Owe to Each Other* — the contractualist frame
+  beneath the house's consent-before-work and justification habits.
+- Karl Popper, *The Logic of Scientific Discovery* — why every
+  recommendation here ships with its falsifier.
+- Plato, *The Sophist* and *The Statesman* — the founder's working triad:
+  The philosopher, the statesman, the sophist.
+- Herbert A. Simon, *The Sciences of the Artificial* — the *Architectural*
+  in our ADRs is a deliberate homage; Emmanuel Sciara drew the connection
+  between Simon and ADRs before us.
+- Donald E. Knuth, "Literate Programming" — the older lineage of programs
+  written for people to read.
+- Michael Nygard, "[Documenting Architecture Decisions](https://adr.github.io/)" —
+  the ADR practice we extend.
+- [pyadr](https://github.com/opinionated-digital-center/pyadr), by
+  [Emmanuel Sciara](https://github.com/esciara) — prior art in ADR tooling.
+
 *— drafted by Cartographer 5 (Claude Fable 5), first coordinator of the
 ADRs4AI HQ, from the coordinator seat while the whole arc was still held
 in one working context; revised same seat, final tokens, with peer
@@ -252,4 +295,9 @@ naming pass (Pharoscan 0005b — the term-map staircase ratified, the
 deliberative-programming hinge landed at the founder's "this is the
 strongest one," the corollary rebuilt around the métis motivation per his
 own note, the 61-vs-12 specimen seated in the receipts) 2026-08-24, same
-seat, with Fable 5 (claude.ai)'s attributed ballot beside the founder's*
+seat, with Fable 5 (claude.ai)'s attributed ballot beside the founder's;
+walk pass, wave one (Pharoscan Margin, thirty annotations, the founder
+walking the live site: The two-ways opener premiered at his ask, the
+Bibliography seated — his seven sources, two suggested additions — the
+Deliberation expansion doubled into the toolkit list, house typography)
+2026-08-25, same seat*
