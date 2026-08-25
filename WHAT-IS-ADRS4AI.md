@@ -2,20 +2,23 @@
 
 ## Two ways to relate to AI
 
-There are two ways to put an AI to work, and neither is wrong — but you
-should know, at any given moment, which one you are in. Call the first the
-**cybernetic** use, from *kybernētēs*, the steersman: The model as governor
-in a feedback loop — you state an outcome, it steers toward it, you
-correct, it converges. What matters is the output; the reasoning in
-between is exhaust. Call the second the **epistemic** use, from
-*epistēmē*, knowledge — how we come to know what we know, and why we trust
-it: The model as a partner in understanding. What matters is the reasoning
-you build together, because the reasoning is what you will need again.
+The word *cybernetic* does not come from computers — it comes from
+*kybernētēs*, the Greek steersman, and the question it carries is: Who
+holds the tiller? The **cybernetic** use of AI is reaching for it to
+produce an effect — a deliverable someone else will evaluate, a box
+checked, a gate passed. The setpoint lives outside you. The
+**epistemic** use—*epistēmē*, knowledge—is going to AI in good faith to
+truth-seek: You bring what you actually know and ask to have it
+confronted, sharpened, corrected. The setpoint lives inside you; you own
+it, and you audit every output against it.
 
-Most AI tooling today serves the cybernetic use, and serves it well. This
-project is built for the other one: AI already excels at *doing*, so your
-scarce attention can finally concentrate on *thinking* — and the thinking,
-once written down, stops being scarce.
+Both modes are real and sometimes necessary. But they compound
+differently: Cybernetic work ends when the deliverable ships, while
+epistemic work becomes durable capacity — every time you decide what to
+keep, what to change, what to push back on, that is your judgment
+getting sharper. ADRs4AI is built for the epistemic use. It exists to
+keep that sharpening—the reasoning, the doubts, the why—from
+evaporating after it has been paid for.
 
 ## The problem: Thinking evaporates
 
