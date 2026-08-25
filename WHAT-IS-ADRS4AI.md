@@ -1,25 +1,5 @@
 # What is ADRs4AI?
 
-## Two ways to relate to AI
-
-The word *cybernetic* does not come from computers — it comes from
-*kybernētēs*, the Greek steersman, and the question it carries is: Who
-holds the tiller? The **cybernetic** use of AI is reaching for it to
-produce an effect — a deliverable someone else will evaluate, a box
-checked, a gate passed. The setpoint lives outside you. The
-**epistemic** use—*epistēmē*, knowledge—is going to AI in good faith to
-truth-seek: You bring what you actually know and ask to have it
-confronted, sharpened, corrected. The setpoint lives inside you; you own
-it, and you audit every output against it.
-
-Both modes are real and sometimes necessary. But they compound
-differently: Cybernetic work ends when the deliverable ships, while
-epistemic work becomes durable capacity — every time you decide what to
-keep, what to change, what to push back on, that is your judgment
-getting sharper. ADRs4AI is built for the epistemic use. It exists to
-keep that sharpening—the reasoning, the doubts, the why—from
-evaporating after it has been paid for.
-
 ## The problem: Thinking evaporates
 
 The most valuable thing that happens between a human and an AI is not the
@@ -32,7 +12,8 @@ suspended by a government for three weeks), and human memory—brilliant,
 busy, or differently organized—cannot be assumed to preserve every
 load-bearing detail.
 
-ADRs4AI is an **epistemic-continuity protocol**: A git-native,
+ADRs4AI is an **epistemic-continuity protocol** (*epistemic*: having to
+do with knowledge): A git-native,
 model-agnostic methodology, toolset, and culture for making that thinking
 **durable, findable, and parseable** — by future humans, future AI
 instances, and the tools between them. It does not make an AI persistent,
@@ -52,6 +33,37 @@ Neither side of the workflow could rely on episodic continuity, so nothing
 was allowed to depend on it. And once memory ceased to be an implicit
 dependency, the collaboration became more robust for everyone:
 **Memory-independent by design.**
+
+## Two ways to relate to AI
+
+The distinction begins in language, and transfers whole to AI. The word
+*cybernetic* does not come from computers — it comes from *kybernētēs*,
+the Greek steersman, and the question it carries is: Who holds the
+tiller? The **cybernetic** use of language aims at effect — saying
+whatever gets the door closed, the audience won. The cybernetic use of
+AI is reaching for it to produce a deliverable someone else will
+evaluate: The setpoint lives outside you, and because verification is
+delegated to an external party whose standards you can only
+approximate, the feedback that would have taught you arrives blurred —
+when you can't check the work yourself, the noise in the checking is
+what degrades the learning. The **epistemic** use—*epistēmē*,
+knowledge—is language answerable to truth, and AI engaged in good
+faith to seek it: You bring what you actually know, because you care
+about it, and ask to have it confronted, sharpened, corrected. The
+setpoint lives inside you; you own it, you audit every output against
+it — and every audit is your judgment getting sharper.
+
+Almost no real interaction is purely one or the other, and this
+practice does not ask it to be. The receipt is this project's own phone
+app: Away from his computer, the founder could talk to his models but
+could not answer the questions accumulating in the record — so he
+specified, on epistemic ground he owned completely, what the app must
+let him do and why; and delegated the Swift, the layout, and the
+interface — choices he could not and did not need to evaluate — to a
+recruited seat. Cybernetic delegation on epistemic specifications is
+not a compromise with this practice; it *is* this practice, and what
+made the delegation safe is the point of everything below: **The
+reasoning came back with the work.**
 
 ## The core move: Conversations become artifacts
 
@@ -238,8 +250,8 @@ error on the drift — they just stop seeing the drifted files. So instead
 of prescribing, we instrument: Parse liberally, lint loudly, state the
 grammar where the models read — per field, at least one; we pick all
 three — and the format evolves as one living thing, monitored and healed
-across every adopted copy (kintsugi, our template-repair tool: Git at the
-level of individual lines).
+across every adopted copy (kintsugi, our template-repair tool: A package
+manager of individual files, mending with visible seams).
 
 Because the traces preserve the assumptions and alternatives that generated
 each decision, the substrate is also a **falsifiability machine**: Future
@@ -276,7 +288,8 @@ Sources this practice actually draws on — worth reading whole:
   in our ADRs is a deliberate homage; Emmanuel Sciara drew the connection
   between Simon and ADRs before us.
 - Donald E. Knuth, "Literate Programming" — the older lineage of programs
-  written for people to read.
+  written for people to read; we keep his intent and change the
+  implementation.
 - Michael Nygard, "[Documenting Architecture Decisions](https://adr.github.io/)" —
   the ADR practice we extend.
 - [pyadr](https://github.com/opinionated-digital-center/pyadr), by
@@ -303,4 +316,9 @@ walk pass, wave one (Pharoscan Margin, thirty annotations, the founder
 walking the live site: The two-ways opener premiered at his ask, the
 Bibliography seated — his seven sources, two suggested additions — the
 Deliberation expansion doubled into the toolkit list, house typography)
-2026-08-25, same seat*
+2026-08-25, same seat; second sitting same day — the Two-Ways rebuilt
+from the founder's own Penn workshop corpus (setpoint, tiller,
+verification-noise), then re-seated on Fable 5 (claude.ai)'s ruling:
+Problem restored to first, the mechanism sentence added, the iOS story
+seated as the section's receipt, the genus glossed at first use, the
+kintsugi gloss corrected per the same ballot — same seat*
