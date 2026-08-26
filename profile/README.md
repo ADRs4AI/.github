@@ -1,5 +1,7 @@
 # ADRs4AI
 
+*Say it: "ADRs for AI" — one name, two registers; the mark travels the URLs, the spelled form travels aloud.*
+
 **Your thinking stops disappearing. Your decisions start compounding.**
 
 - 📐 **[The template](https://github.com/jlumbroso/human-ai-collaboration-template-A)** — a repository starter: ADR & seed templates, the directives, the inbox protocol, task-runner recipes. Adopt whole or by feature — it works from your first seed.
