@@ -21,11 +21,10 @@ and it does not make anyone remember. **It makes the work resumable — and the 
 
 Imperative programming tells the machine *how*; declarative programming,
 *what*. **Deliberative programming** keeps the *why* — and ADRs4AI is its
-first full toolkit. Deliberative programming is software construction in
-which the deliberation itself—goals, originating context, alternatives,
-rationale, uncertainty, falsifiers, decisions, and provenance—is a
-first-class, versioned input from which executable artifacts are
-produced and revised.
+first full toolkit. Deliberative programming is building in which the
+deliberation itself—the questions, the alternatives, the reasons, and
+the conditions of revision—is a first-class, versioned input from
+which the artifacts are produced and revised.
 
 It was built the honest way: By a professor with Severely Deficient
 Autobiographical Memory—which is not an absence of memory but a
@@ -49,19 +48,19 @@ language aims at effect — saying whatever gets the door closed, the
 audience won; the cybernetic use of AI is reaching for it to produce a
 deliverable someone else will evaluate. The **epistemic**
 use—*epistēmē*, knowledge—is language answerable to truth, and AI
-engaged in good faith to seek it: Inquiry into what genuinely interests
-you — the questions that stop you and set your thinking in motion —
-bringing what you know and asking to have it confronted, sharpened,
-corrected.
+engaged in good faith to seek it: Bringing what you know and asking to
+have it confronted, sharpened, corrected.
 
 In cybernetic use, the target state lies in the effect to be produced.
 In epistemic use, the target state is improved, revisable
 understanding. When the task is externally assigned and externally
 judged, the cybernetic loop can become especially de-skilling: The user
 learns to approximate an evaluator's reward function without learning
-what makes the work substantively good. The epistemic loop runs the
-other way — each time you weigh an output against what you actually
-know, your judgment gets sharper.
+what makes the work substantively good. Epistemic use begins in
+*aporia*: A question that is genuinely yours, that stimulates cognition
+rather than assigns it, and whose sound resolution you would recognize
+when you meet it — and each time you weigh an output against what you
+actually know, your judgment gets sharper.
 
 Almost no real interaction is purely one or the other, and this
 practice does not ask it to be. The receipt is this project's own phone
@@ -72,9 +71,8 @@ let him do and why; and delegated the Swift, the layout, and the
 interface — choices he could not and did not need to evaluate — to a
 recruited seat. Cybernetic delegation on epistemic specifications is
 not a compromise with this practice; it *is* this practice. The aim
-isn't to never delegate; rather it is to **never let cybernetic
-delegation sever the epistemic loop**: The reasoning must always come
-back with the work.
+isn't to never delegate — it is to **never let cybernetic delegation
+sever the epistemic loop**. The reasoning came back with the work.
 
 ## The core move: Conversations become artifacts
 
@@ -103,7 +101,7 @@ Rationale, Confidence, and Falsifier** (ORRCF in house shorthand). An AI
 that asks a question must lay out the option space (the diversity that
 resists anchoring), state its attributed lean, and give the rationale —
 not a justification after the fact, but the explicit, inspectable,
-attributable argument the recommender is prepared to stake in the
+attributable argument the recommender stakes in the
 record. Then two closers: A
 confidence, stated at the end *with its reasons*, because a number without
 reasons is performative confidence, and performative confidence is
@@ -269,8 +267,7 @@ of prescribing, we instrument: Parse liberally, lint loudly, state the
 grammar where the models read — per field, at least one; we pick all
 three — and the format evolves as one living thing, monitored and healed
 across every adopted copy (kintsugi, our template-repair tool: A package
-manager of individual files, mending with visible seams so local
-adaptations survive the mend).
+manager of individual files, mending with visible seams).
 
 Because the traces preserve the assumptions and alternatives that generated
 each decision, the substrate is also a **falsifiability machine**: Future
