@@ -5,7 +5,7 @@
 **Your thinking stops disappearing. Your decisions start compounding.**
 
 - 📐 **[The template](https://github.com/ADRs4AI/human-ai-collaboration-template-A)** — a repository starter: ADR & seed templates, the directives, the inbox protocol, task-runner recipes. Adopt whole or by feature — it works from your first seed.
-- 🧩 **[The VS Code extension](https://github.com/jlumbroso/vscode-adrs-for-ai)** — tree views of your open questions, diagnostics that catch malformed records as you type, deep links, and an MCP server so your agents can query the record.
+- 🧩 **[The VS Code extension](https://github.com/ADRs4AI/vscode-adrs4ai)** — tree views of your open questions, diagnostics that catch malformed records as you type, deep links, and an MCP server so your agents can query the record.
 - 📱 **[The iOS client](https://github.com/ADRs4AI/ios-client)** — your project's open questions, in your pocket: sign in, import a repo, review, and one-tap Accept that lands real answers as commits.
 
 **How it works, in twenty seconds.** Dump your thinking into a *seed* — messy is fine, dictation is fine. Your AI chunks it into *ADRs* that keep what usually evaporates: your actual words, the options considered, the reasoning, the open questions. Every question is findable by one grep — `### QST:` — and each arrives with the options, a recommendation, its rationale, a stated confidence, and what would prove it wrong — so answering streamlines to *accept or override*. As much for the veteran with too many projects, as for the beginner building their very first one.
