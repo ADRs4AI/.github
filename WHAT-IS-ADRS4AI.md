@@ -21,7 +21,11 @@ and it does not make anyone remember. **It makes the work resumable — and the 
 
 Imperative programming tells the machine *how*; declarative programming,
 *what*. **Deliberative programming** keeps the *why* — and ADRs4AI is its
-first full toolkit.
+first full toolkit. Deliberative programming is software construction in
+which the deliberation itself—goals, originating context, alternatives,
+rationale, uncertainty, falsifiers, decisions, and provenance—is a
+first-class, versioned input from which executable artifacts are
+produced and revised.
 
 It was built the honest way: By a professor with Severely Deficient
 Autobiographical Memory—which is not an absence of memory but a
@@ -39,19 +43,25 @@ dependency, the collaboration became more robust for everyone:
 The distinction begins in language, and transfers whole to AI. The word
 *cybernetic* does not come from computers — it comes from *kybernētēs*,
 the Greek steersman, and the question it carries is: Who holds the
-tiller? The **cybernetic** use of language aims at effect — saying
-whatever gets the door closed, the audience won. The cybernetic use of
-AI is reaching for it to produce a deliverable someone else will
-evaluate: The setpoint lives outside you, and because verification is
-delegated to an external party whose standards you can only
-approximate, the feedback that would have taught you arrives blurred —
-when you can't check the work yourself, the noise in the checking is
-what degrades the learning. The **epistemic** use—*epistēmē*,
-knowledge—is language answerable to truth, and AI engaged in good
-faith to seek it: You bring what you actually know, because you care
-about it, and ask to have it confronted, sharpened, corrected. The
-setpoint lives inside you; you own it, you audit every output against
-it — and every audit is your judgment getting sharper.
+tiller? Here, cybernetic and epistemic name two stances toward language
+and AI — not two rival academic disciplines. The **cybernetic** use of
+language aims at effect — saying whatever gets the door closed, the
+audience won; the cybernetic use of AI is reaching for it to produce a
+deliverable someone else will evaluate. The **epistemic**
+use—*epistēmē*, knowledge—is language answerable to truth, and AI
+engaged in good faith to seek it: Inquiry into what genuinely interests
+you — the questions that stop you and set your thinking in motion —
+bringing what you know and asking to have it confronted, sharpened,
+corrected.
+
+In cybernetic use, the target state lies in the effect to be produced.
+In epistemic use, the target state is improved, revisable
+understanding. When the task is externally assigned and externally
+judged, the cybernetic loop can become especially de-skilling: The user
+learns to approximate an evaluator's reward function without learning
+what makes the work substantively good. The epistemic loop runs the
+other way — each time you weigh an output against what you actually
+know, your judgment gets sharper.
 
 Almost no real interaction is purely one or the other, and this
 practice does not ask it to be. The receipt is this project's own phone
@@ -61,9 +71,10 @@ specified, on epistemic ground he owned completely, what the app must
 let him do and why; and delegated the Swift, the layout, and the
 interface — choices he could not and did not need to evaluate — to a
 recruited seat. Cybernetic delegation on epistemic specifications is
-not a compromise with this practice; it *is* this practice, and what
-made the delegation safe is the point of everything below: **The
-reasoning came back with the work.**
+not a compromise with this practice; it *is* this practice. The aim
+isn't to never delegate; rather it is to **never let cybernetic
+delegation sever the epistemic loop**: The reasoning must always come
+back with the work.
 
 ## The core move: Conversations become artifacts
 
@@ -87,16 +98,19 @@ discussions to artifacts immediately.**
 
 Two refinements carry most of the weight:
 
-**Every question ships with ORRCF — Options, Recommendation, Rationale,
-Confidence, Falsifier** (spelled out on purpose; the acronym is house
-shorthand). An AI that asks a question must lay out the option space (the
-diversity that resists anchoring), state its attributed lean, and give the
-rationale — not a justification after the fact, but the actual thinking
-trace that connects the options to the lean. Then two closers: A
+**Every question ships with five components — Options, Recommendation,
+Rationale, Confidence, and Falsifier** (ORRCF in house shorthand). An AI
+that asks a question must lay out the option space (the diversity that
+resists anchoring), state its attributed lean, and give the rationale —
+not a justification after the fact, but the explicit, inspectable,
+attributable argument the recommender is prepared to stake in the
+record. Then two closers: A
 confidence, stated at the end *with its reasons*, because a number without
 reasons is performative confidence, and performative confidence is
-corrosive to epistemic continuity; and a falsifier—*what would prove this
-wrong*—so every recommendation carries the conditions of its own
+corrosive to epistemic continuity; and a falsifier—the evidence,
+observation, failed prediction, or changed constraint that would cause
+the recommendation to be revised—so every recommendation carries the
+conditions of its own
 revision. That turns delegation into delegation-with-a-handle: You can
 reclaim any decision you handed off, because the reasoning came with it.
 The binding constraint in months of measured practice was never artifact
@@ -195,16 +209,20 @@ process, and the record—public in the artifacts—shows it held:
 
 ## What you actually get
 
-- **The template** — a repository starter: The ADR/seed templates, the
+- **The template** *(available at launch)* — a repository starter: The
+  ADR/seed templates, the
   directives, the inbox protocol, the crew registry, the task-runner
   recipes. Versioned releases; adopt whole or by feature.
-- **The companion skill** — teaches any Claude (or compatible agent) the
+- **The companion skill** *(planned)* — teaches any Claude (or compatible
+  agent) the
   syntax and the culture, so your models write parseable artifacts from
   their first session.
-- **The VS Code extension** — tree views of ADRs and open questions,
+- **The VS Code extension** *(in development; Marketplace listing to
+  follow)* — tree views of ADRs and open questions,
   diagnostics that catch malformed questions *at author time* (with
   fix-its), deep links, and an MCP server so agents can query the record.
-- **The iOS client** — the record in your pocket: Dossiers of open
+- **The iOS client** *(in development; App Store submission in
+  progress)* — the record in your pocket: Dossiers of open
   questions, recommendations you can *Accept or Override* from wherever
   you are — a sibling of the extension on the client side of the split.
 - **The Architectural Deliberation Record (ADR) format itself** — a
@@ -240,9 +258,9 @@ noise; why the record keeps *reasoning*, not just conclusions.
 
 And an engineering corollary, in defense of something specific: **The
 format stays loose on purpose.** These records are plain Markdown — not
-XML, not a schema — because the substrate has to leave room for *métis*,
+XML, not a rigid schema — because the substrate has to leave room for *métis*,
 the local, practical knowledge that James C. Scott's *Seeing Like a
-State* warns over-legible systems destroy. Our grammar was never
+State* warns over-legible systems can destroy. Our grammar was never
 prescribed; it grew from the organic needs of its most engaged users (the
 Postel story above). But looseness has a quiet failure mode: When rules
 live only in habit, generative models drift from them, and parsers don't
@@ -251,7 +269,8 @@ of prescribing, we instrument: Parse liberally, lint loudly, state the
 grammar where the models read — per field, at least one; we pick all
 three — and the format evolves as one living thing, monitored and healed
 across every adopted copy (kintsugi, our template-repair tool: A package
-manager of individual files, mending with visible seams).
+manager of individual files, mending with visible seams so local
+adaptations survive the mend).
 
 Because the traces preserve the assumptions and alternatives that generated
 each decision, the substrate is also a **falsifiability machine**: Future
@@ -321,4 +340,13 @@ from the founder's own Penn workshop corpus (setpoint, tiller,
 verification-noise), then re-seated on Fable 5 (claude.ai)'s ruling:
 Problem restored to first, the mechanism sentence added, the iOS story
 seated as the section's receipt, the genus glossed at first use, the
-kintsugi gloss corrected per the same ballot — same seat*
+kintsugi gloss corrected per the same ballot — same seat; ratification
+pass (fourteen ORRCF QSTs answered by the founder, 2026-08-25 evening,
+with Fable 5 (claude.ai)'s append-only patch stacked beside: The guard
+trimmed, his target-state formulation seated, the close in his aphorism
+form, the deliberative-programming definition landed after the hinge,
+ORRCF's five components worded first with the rationale as the staked
+argument and the falsifier broadened, the two vetoes honored —
+bibliography unchanged as personally-engaged scholarship only, seat
+doctrine untouched — and the epistemic-continuity coinage claimed
+deliberately at his direction) folded launch night, same seat*
