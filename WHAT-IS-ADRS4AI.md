@@ -300,9 +300,9 @@ Sources this practice actually draws on — worth reading whole:
   recommendation here ships with its falsifier.
 - Plato, *The Sophist* and *The Statesman* — the founder's working triad:
   The philosopher, the statesman, the sophist.
-- Herbert A. Simon, *The Sciences of the Artificial* — the *Architectural*
-  in our ADRs is a deliberate homage; Emmanuel Sciara drew the connection
-  between Simon and ADRs before us.
+- Herbert A. Simon, "The Architecture of Complexity" — *Architectural*
+  comes with the standard ADR name; when ours traded *Decision* for
+  *Deliberation*, keeping it was a deliberate homage.
 - Donald E. Knuth, "Literate Programming" — the older lineage of programs
   written for people to read; we keep his intent and change the
   implementation.
