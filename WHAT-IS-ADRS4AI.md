@@ -216,7 +216,8 @@ process, and the record—public in the artifacts—shows it held:
   syntax and the culture, so your models write parseable artifacts from
   their first session.
 - **The VS Code extension** *(available — ["ADRs for AI" on the VS Code
-  Marketplace](https://marketplace.visualstudio.com/items?itemName=jlumbroso.adrs4ai))* — tree views of ADRs and open questions,
+  Marketplace](https://marketplace.visualstudio.com/items?itemName=jlumbroso.adrs4ai) and
+  [Open VSX](https://open-vsx.org/extension/jlumbroso/adrs4ai))* — tree views of ADRs and open questions,
   diagnostics that catch malformed questions *at author time* (with
   fix-its), deep links, and an MCP server so agents can query the record.
 - **The iOS client** *(in development; App Store submission in
