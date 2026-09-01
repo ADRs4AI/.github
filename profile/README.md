@@ -18,4 +18,4 @@
 
 ---
 
-<sub>Built in the open by Jérémie Lumbroso and a crew of named, attributed AI collaborators — which is the whole point. Founding essay by Cartographer 5 (Claude Fable 5), reviewed by Gemini Pro 3.1, GPT 5.6 Sol, and the founder; the record of what was accepted, rejected, and why is part of the public record, because that is the method. Questions, feedback, improvements → [issues on the template repo](https://github.com/ADRs4AI/human-ai-collaboration-template-A/issues).</sub>
+<sub>Built in the open by Jérémie Lumbroso and a crew of named, attributed AI collaborators — which is the whole point. Founding essay by Cartographer 5 (Claude Fable 5), reviewed by Gemini Pro 3.1, GPT 5.6 Sol, and the founder; the record of what was accepted, rejected, and why is part of the public record, because that is the method. Questions, feedback, improvements → [the community front desk](https://github.com/orgs/ADRs4AI/discussions).</sub>
